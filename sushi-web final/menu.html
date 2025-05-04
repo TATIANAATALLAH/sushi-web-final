@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="menu.html" class="nav-button">Menu</a>
+        <a href="contact.html" class="nav-button">Contact Us</a>
+        <a href="about.html" class="nav-button">About</a>
+    </nav>
+    <main>
+        <section id="menu">
+            <h2>Our Delicious Menu</h2>
+            <p>Explore our wide variety of sushi rolls, salads, and boats, each crafted with the freshest ingredients.
+            </p>
+
+            <!-- Menu Navigation Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-link active" onclick="openMenu(event, 'salmon')">Salmon Items</button>
+                <button class="tab-link" onclick="openMenu(event, 'crab')">Crab Items</button>
+                <button class="tab-link" onclick="openMenu(event, 'salades')">Salades</button>
+                <button class="tab-link" onclick="openMenu(event, 'boats')">Boats</button>
+                <button class="tab-link" onclick="openMenu(event, 'shrimp')">shrimp items</button>
+            </div>
+
+            <!-- Salmon Items -->
+            <div id="salmon" class="tab-content active">
+                <h3>Salmon Items</h3>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images\salmon avocado M.jpg" alt="Salmon Avocado">
+                        <div class="menu-description">
+                            <h4>Salmon Avocado</h4>
+                            <p>Authentic Japanese sushi with (nori sheet, rice, fresh salmon, avocado).</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\salmon mango M.jpg" alt="Salmon Mango">
+                        <div class="menu-description">
+                            <h4>Salmon Mango</h4>
+                            <p>Authentic Japanese sushi with (nori sheet, rice, fresh salmon, mango).</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\spicy lady M.jpg" alt="Spicy salmon">
+                        <div class="menu-description">
+                            <h4>Spicy salmon</h4>
+                            <p>Authentic Japanese sushi with (nori sheet, rice, fresh spicy salmon, mango , avocado).
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\cheese salmon M.jpg" alt=" salmon mango">
+                        <div class="menu-description">
+                            <h4>Salmon cheese</h4>
+                            <p>Authentic Japanese sushi with (nori sheet, rice, fresh salmon, philadelphia cheese).</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Crab Items -->
+            <div id="crab" class="tab-content">
+                <h3>Crab Items</h3>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images\california M.jpg" alt="California">
+                        <div class="menu-description">
+                            <h4>California</h4>
+                            <p>A classic sushi piece with (nori sheet, rice, crazymix, cucumber, sweet grain).</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\crab avocado.jpg" alt="Green Taste">
+                        <div class="menu-description">
+                            <h4>Green Taste</h4>
+                            <p>Authentic Japanese sushi with (nori sheet, rice, crazymix, avocado).</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\crab mango.jpg" alt="yellow Taste">
+                        <div class="menu-description">
+                            <h4>yellow Taste</h4>
+                            <p>Authentic Japanese sushi with (nori sheet, rice, crazymix, mango).</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\crazy micx.jfif" alt="crazy mix">
+                        <div class="menu-description">
+                            <h4>crazy mix</h4>
+                            <p>Authentic Japanese sushi with (nori sheet, rice, crazymix on top).</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Salades -->
+            <div id="salades" class="tab-content">
+                <h3>Salades</h3>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images\shrimp saladde M.jpg" 1.jpg" alt="Salade 1">
+                        <div class="menu-description">
+                            <h4>Shrimp salade</h4>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\shrimp eggs M.jpg" alt="salade 2">
+                        <div class="menu-description">
+                            <h4>Shrimp&eggs salade</h4>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\salmon salade M.jpg" alt="Salade 3">
+                        <div class="menu-description">
+                            <h4>Salmon salade</h4>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\rocca salade.jpg" 4.jpg" alt="Salade 4">
+                        <div class="menu-description">
+                            <h4>rocca salade</h4>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\crab salade M.jpg" 6.jpg" alt="Salade 5">
+                        <div class="menu-description">
+                            <h4>crab salade</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Boats -->
+            <div id="boats" class="tab-content">
+                <h3>Boats</h3>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images\salmon boat 2.jpg" alt="Boat 1">
+                        <div class="menu-description">
+                            <h4>salmon boat</h4>
+                            <p>A delightful sushi boat with a variety of fresh sushi rolls and sashimi.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\salon baoat.jpg" alt="Boat 2">
+                        <div class="menu-description">
+                            <h4>salmon boat</h4>
+
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\mix boat.jpg" alt="Boat 3">
+                        <div class="menu-description">
+                            <h4>mix boat</h4>
+
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\crab boat.jpg" alt="Boat 4">
+                        <div class="menu-description">
+                            <h4>crab boat</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- shrimp  -->
+            <div id="shrimp" class="tab-content">
+                <h3>shrimp</h3>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images\cucumber shrimp.jpg" alt="cucumber shrimp">
+                        <div class="menu-description">
+                            <h4>cucumber shrimp</h4>
+                            <p>Authentic Japanese sushi with (nori sheet, rice, fresh shrimp, cucumber).</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\avocado shrimp.jpg" alt="Boat 2">
+                        <div class="menu-description">
+                            <h4>avocado shrimp</h4>
+                            <p>Authentic Japanese sushi with (nori sheet, rice, fresh shrimp,avocado)</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\shrim salmon roll.jpg" alt="Boat 3">
+                        <div class="menu-description">
+                            <h4>shrimp salmon </h4>
+                            <p>Authentic Japanese sushi with (nori sheet, rice, fresh shrimp,fresh salmon ,with sauce on
+                                top)</p>
+
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images\simple shrimp.jpg" alt="shrimp rice">
+                        <div class="menu-description">
+                            <h4>simple shrimp</h4>
+                            <p>Authentic Japanese sushi with (nori sheet, rice, fresh shrimp)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+        function openMenu(event, menuName) {
+            // Hide all tab contents
+            const sections = document.querySelectorAll('.tab-content');
+            sections.forEach(content => content.style.display = 'none');
+
+            // Remove active class from all tab links
+            const buttons = document.querySelectorAll('.tab-link');
+            buttons.forEach(buttons => buttons.classList.remove('active'));
+
+            // Show the selected tab content
+            document.getElementById(menuName).style.display = 'block';
+
+            // Add active class to the clicked tab
+            event.currentTarget.classList.add('active');
+        }
+
+        // Show the first tab by default
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('salmon').style.display = 'block';
+        });
+    </script>

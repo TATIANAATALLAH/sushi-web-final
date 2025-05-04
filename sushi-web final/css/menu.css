@@ -1,0 +1,217 @@
+/* General Menu Styles */
+#menu {
+    background-color:  #F3E0B5;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    background-color: #F3E0B5;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.tab-link:hover {
+    background-color: #ddd;
+}
+
+.tab-link.active {
+    background-color: #ff4747;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    border-radius:10px ;
+    border-radius: 10px; /* Match the container's rounded corners */
+    object-fit: cover;
+}
+
+.menu-description {
+    padding: 10px;
+}
+
+.menu-description h4 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.menu-description p {
+    font-size: 0.9rem;
+    color: #555;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ff4747; /* Red background */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #e63e3e; /* Darker red on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+.tab-content {
+    display: none; /* Hide all sections by default */
+}
+
+.tab-content.active {
+    display: block; /* Show the active section */
+}
+.menu {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background */
+}
+
+.menu-item {
+    text-align: center; /* Center the content */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Ensure images don't overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+.menu-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+}
+/* Add responsive styles for small devices */
+@media (max-width: 768px) {
+    .menu-tabs {
+        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        justify-content: center;
+    }
+
+    .tab-link {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        padding: 8px 15px; /* Adjust padding for smaller buttons */
+    }
+
+    .menu-list {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%; /* Make items take up most of the screen width */
+    }
+
+    .menu-item img {
+        height: auto; /* Allow images to resize proportionally */
+    }
+}
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Ensure space between items */
+    align-items: center; /* Vertically center items */
+    background-color: #ff4747; /* Red background */
+    padding: 10px 20px; /* Add padding for spacing */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #e63e3e; /* Darker red on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Responsive Styles for Small Devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        justify-content: center; /* Center items on smaller screens */
+    }
+
+    .nav-button {
+        margin: 5px; /* Reduce margin for smaller screens */
+        padding: 8px 15px; /* Adjust padding for smaller buttons */
+    }
+}

@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#F3E0B5; /* Light background color */
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #cebebe; /* Red background */
+    color:#F3E0B5; /* Light text */
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 40px;
+    background-color:#F3E0B5;/* Light background */
+}
+
+.gallery-item {
+    text-align: center;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Ensure images don't overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.gallery-item img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.gallery-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); /* Slightly zoom the image on hover */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #FF0000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+/* Gallery Section */
+.gallery {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 photos per row */
+    gap: 20px; /* Space between grid items */
+    padding: 40px;
+    background-color:#F3E0B5; /* Light background */
+    width: 100%; /* Ensure the gallery spans the full width of the screen */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.gallery-item {
+    position: relative;
+    text-align: center;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Ensure images don't overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.gallery-item img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+.gallery-item h3 {
+    position: absolute; /* Position the description over the image */
+    bottom: 10px; /* Position it at the bottom of the image */
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: white; /* White text for contrast */
+    padding: 5px 10px; /* Add padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    font-size: 1rem;
+    z-index: 2; /* Ensure it stays above the image */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    opacity: 1; /* Ensure it's visible by default */
+}
+
+
+.gallery-item:hover  h3{
+    opacity: 1; /* Keep the description visible on hover */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); /* Slightly zoom the image on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 photos per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 1 photo per row on small screens */
+    }
+}
